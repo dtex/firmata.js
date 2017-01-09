@@ -34,7 +34,8 @@ Board.requestPort(function(error, port) {
       bitOrder: MSBFIRST,
       dataMode: board.SPI_DATA_MODES.MODE0,
       maxClockSpeed: 2500000, // 2.5 Mhz
-      csPin: 2
+      csPin: 2,
+      csActiveState: board.SPI_CS_ACTIVE_STATE.LOW
     });
 
     // Device on, 40hz, normal mode, all axis' enabled
